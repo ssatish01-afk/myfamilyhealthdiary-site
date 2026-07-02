@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Family Wellness Diary</title>
+    <style>
+      :root {
+        --bg: #f4f7f2;
+        --card: #ffffff;
+        --text: #1c2320;
+        --muted: #5a6360;
+        --accent: #0f8a7b;
+        --accent-dark: #0a6b5f;
+        --border: #dbe5df;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background: linear-gradient(180deg, #f8fbf9 0%, var(--bg) 100%);
+        color: var(--text);
+      }
+
+      .wrap {
+        max-width: 980px;
+        margin: 0 auto;
+        padding: 32px 20px 56px;
+      }
+
+      .hero {
+        background: linear-gradient(135deg, var(--accent) 0%, #0d6f72 100%);
+        color: white;
+        border-radius: 28px;
+        padding: 40px 28px;
+        box-shadow: 0 18px 44px rgba(8, 58, 53, 0.14);
+      }
+
+      h1,
+      h2,
+      h3 {
+        margin-top: 0;
+      }
+
+      h1 {
+        font-size: clamp(2rem, 5vw, 3.6rem);
+        line-height: 1.05;
+        margin-bottom: 12px;
+      }
+
+      .hero p {
+        font-size: 1.05rem;
+        line-height: 1.7;
+        max-width: 720px;
+        margin: 0;
+        color: rgba(255, 255, 255, 0.9);
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 18px;
+        margin-top: 24px;
+      }
+
+      .card {
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: 22px;
+        padding: 22px;
+        box-shadow: 0 8px 24px rgba(18, 28, 22, 0.05);
+      }
+
+      .card p,
+      .section p,
+      .section li {
+        color: var(--muted);
+        line-height: 1.7;
+      }
+
+      .section {
+        margin-top: 28px;
+        background: rgba(255, 255, 255, 0.7);
+        border: 1px solid var(--border);
+        border-radius: 24px;
+        padding: 26px;
+      }
+
+      .links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-top: 20px;
+      }
+
+      .links a {
+        text-decoration: none;
+        color: white;
+        background: var(--accent);
+        padding: 12px 18px;
+        border-radius: 999px;
+        font-weight: 600;
+      }
+
+      .links a.secondary {
+        background: white;
+        color: var(--accent-dark);
+        border: 1px solid var(--border);
+      }
+
+      footer {
+        margin-top: 28px;
+        color: var(--muted);
+        font-size: 0.95rem;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="wrap">
+      <section class="hero">
+        <h1>Family Wellness Diary</h1>
+        <p>
+          A secure family health records app that helps households organize
+          medical information, doctor visits, lab reports, prescriptions,
+          insurance details, and health documents in one place.
+        </p>
+        <div class="links">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html" class="secondary">Terms of Service</a>
+          <a href="delete-account.html" class="secondary">Delete Account</a>
+        </div>
+      </section>
+
+      <section class="grid">
+        <article class="card">
+          <h3>Family Records</h3>
+          <p>
+            Maintain separate health profiles for family members and keep key
+            medical details organized and easy to access.
+          </p>
+        </article>
+        <article class="card">
+          <h3>Health Documents</h3>
+          <p>
+            Store prescriptions, reports, documents, and insurance information
+            together in one digital record.
+          </p>
+        </article>
+        <article class="card">
+          <h3>Secure Access</h3>
+          <p>
+            Access your data through authenticated sign-in and cloud-backed
+            storage designed to support personal record management.
+          </p>
+        </article>
+      </section>
+
+      <section class="section">
+        <h2>About the App</h2>
+        <p>
+          Family Wellness Diary is designed to help users track and organize
+          household wellness information. The app may include uploads of health
+          documents, user-entered medical notes, appointment information,
+          medication details, and other wellness-related records.
+        </p>
+        <p>
+          This website provides the public policy pages required for app store
+          compliance and user transparency.
+        </p>
+      </section>
+
+      <footer>
+        <p>
+          Contact: Please add your support email here before publishing, for
+          example <strong>support@myfamilyhealthdiary.com</strong>.
+        </p>
+      </footer>
+    </main>
+  </body>
+</html>
